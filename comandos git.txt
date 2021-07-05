@@ -1,0 +1,63 @@
+git comandos
+
+git --version: indica a versão do git atual
+ls: lista os diretorioclear: limpa tela
+cd :navega entre repositorios
+git init: cria um repositorio e o inicializa
+git status: apresenta a situaçao atual no git
+git add: adiciona um arquivo
+git rm <nome do arquivo a ser removido>: remove o arquivo escolhido
+git commit: faz um commit
+-m: adiciona uma mensagem
+git log: mostra o historico de commits
+gif config user.email: mostra o email do dono daquele repositorio
+git config user.name: mostra o nome do autor daquele repositorio
+git log --oneline: mostra o historico de commits de forma resumida
+git lop -p: mostra os histórico de forma mais detalhada
+q : tecla de saida do git log -p
+ls + tab: completa a pesquisa
+mkdir : cria um diretório
+git remote: mostra o repositorio remoto
+git remote add: adiciona um repositorio remoto
+git init --bare : o arquivo ou pasta que receber esse init
+cd .. : sobe um diretorio
+	vai receber todas as alterações dos arquivos git, 
+	por ser um repositório puro por assim dizer
+git remote -v: me mostrar o caminho exato diretorios remotos
+git clone + /c/ e o caminho do servidor: isso vai criar um clone daquele repositorio remoto em qualquer maquina
+git push <repositorio> <branch> :envia os arquivos de uma branch para um repositori "global"
+git pull <repositorio> <branch>: permite baixar os arquivos  de um repositorio global para qualquer maquina
+git remote rename :permite renomear repositorios
+git push -u <repositorio> <branch>: o -u diz, sempre que você dar um push e estiver na master, o push vai direto pra origin
+git branch: mostra as branchs existentes
+git branch <nome da branch> ou git checkout -b <nome>: cria uma branch
+git checkout <nome da branch>: troca de branch
+git branch -d <nome da branch>: deleta uma branch
+git merge <nome da branch>: vai juntar os conteudos das branches
+aviso quando dar merge, no terminal da merge, adicionar um comentario e concluir teclando "x"
+git log --graph: mostra as linhas especificas de desenvolvimento
+git rebase: atualiza a branch
+git checkou -- <nome do arquivo>
+git reset HEAD <nome do arquivo>: retira o arquivo adicionado
+git rever <hash do commit>: reverte um commit enviado
+git stash: da um stash no ultimo mon=mmit que foi mexido
+git stash pop: aplica e apaga o stash
+git stash drop <ID da stash>: apaga a stash
+git checkout <ID da hash de um commit no log> : permite voltar a um commit antigo
+git diff: mostra informações do arquivo que ainda não foram salvas
+git diff <hash antiga>..<hash atual>: mostra a diferença entre códigos
+git tag -a <nome da tag>: gera uma tag
+
+aviso: se tiver espaço no nome, coloque aspas " "
+aviso: quando estiver clonando, o ultimo caminho sera o nome da pasta
+aviso: na master os unicos que podem dar merge e mexer nela são os gestores ou os donos do projeto
+aviso: um git pull request pode ser feito no site do git, e se aceito, o merge vai acontecer
+aviso: antes de fazer um push, fazer um pull
+	e apagar a branch antiga, se for recusada, a branch permanece e o request n acontece
+aviso: não commitar código defeituoso
+
+
+https://devhints.io/git-log: os commandos do git
+https://gist.github.com/leocomelli/2545add34e4fec21ec16
+https://qastack.com.br/programming/32147093/git-delete-remotes-remote-refs-do-not-exist
+https://medium.com/@barbosa_/guia-pr%C3%A1tico-git-9317bd030657
